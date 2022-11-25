@@ -1,0 +1,24 @@
+{
+  "name": "team-rio-nodejs",
+  "version": "1.0.0",
+  "description": "Team Rio Backend Written in NodeJS For The SpaceYaTech Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jatan88/Team-Rio-NodeJS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jatan88/Team-Rio-NodeJS/issues"
+  },
+  "homepage": "https://github.com/Jatan88/Team-Rio-NodeJS#readme",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  }
+}
