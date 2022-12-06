@@ -15,7 +15,7 @@
 
 ## Description
 
-SpaceYaTech backend implemented using NodeJS with Express framework. [ExpressJS](https://nodejs.com/) is a fast, unopinionated, minimalist web framework for NodeJS.
+SpaceYaTech backend implemented using NodeJS with Express framework. [ExpressJS](https://expressjs.com/) is a fast, unopinionated, minimalist web framework for NodeJS.
 
 ## Overview
 
