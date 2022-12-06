@@ -6,12 +6,15 @@
 ![docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 
 ## Table of contents
+
 - [Team-Rio-NodeJS](#team-rio-nodejs)
   - [Table of contents](#table-of-contents)
   - [Description](#description)
   - [Overview](#overview)
   - [Installation](#installation)
   - [Running the app](#running-the-app)
+  - [Formatting](#formatting)
+  - [Build](#build)
   - [Test](#test)
 
 ## Description
@@ -32,10 +35,27 @@ $ npm install
 
 ```bash
 # development
-$ npm run start:dev
+$ npm run dev
 
 # production mode
-$ npm run start:prod
+$ npm run start
+```
+
+## Formatting
+
+```bash
+# prettier
+$ npm run format
+
+# eslint
+$ npm run lint:fix
+```
+
+## Build
+
+```bash
+# validate before commit
+$ npm run validate
 ```
 
 ## Test
