@@ -1,9 +1,9 @@
-import express from 'express';
+import { Request, Response, Router } from 'express';
 import { StatusCodes as sc } from 'http-status-codes';
 
-const router = express.Router();
+const router = Router();
 
-router.get('/', (req, res) => {
+router.get('/', (req: Request, res: Response) => {
 	res.status(sc.OK).json({ message: 'Hello World!' });
 });
 
