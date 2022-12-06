@@ -1,0 +1,4 @@
+@BASE_URL=http://localhost:5000
+
+GET {{BASE_URL}}
+
