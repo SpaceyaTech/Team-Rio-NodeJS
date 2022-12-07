@@ -5,6 +5,8 @@ export enum ReactionsEnum {
 	DOWNVOTE = 'DOWNVOTE',
 }
 
+export type ReactionType = 'UPVOTE' | 'DOWNVOTE';
+
 const ReactionSchema = new Schema({
 	type: { type: String, required: true },
 	blogPost: { type: Schema.Types.ObjectId, ref: 'blogPost' },
