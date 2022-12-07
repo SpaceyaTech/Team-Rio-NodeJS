@@ -1,8 +1,14 @@
+import * as dotenv from 'dotenv';
+dotenv.config(); // setup dotenv
+
 import express, { Express } from 'express';
 import helmet from 'helmet';
 import cors from 'cors';
 import routes from './routes';
 import morgan from 'morgan';
+import { dbSetup } from './models';
+
+dbSetup(); // setup database
 
 const app: Express = express();
 
