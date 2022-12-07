@@ -3,7 +3,11 @@ import express, { Express } from 'express';
 import helmet from 'helmet';
 import morgan from 'morgan';
 import routes from './routes';
+import * as dotenv from 'dotenv';
+import { dbSetup } from './models';
 
+dbSetup(); // setup database
+dotenv.config(); // setup dotenv
 const app: Express = express();
 
 app.use(helmet());

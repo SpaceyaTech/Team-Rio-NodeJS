@@ -1,12 +1,12 @@
 import { model, Schema } from 'mongoose';
 
 export enum ReactionsEnum {
-	UPVOTE,
-	DOWNVOTE,
+	UPVOTE = 'UPVOTE',
+	DOWNVOTE = 'DOWNVOTE',
 }
 
 const ReactionSchema = new Schema({
-	type: { type: ReactionsEnum, required: true },
+	type: { type: String, required: true },
 	blogPost: { type: Schema.Types.ObjectId, ref: 'blogPost' },
 	comment: { type: Schema.Types.ObjectId, ref: 'comment' },
 	account: { type: Schema.Types.ObjectId, ref: 'account' },
