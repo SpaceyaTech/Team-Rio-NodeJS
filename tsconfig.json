@@ -13,9 +13,7 @@
     "allowSyntheticDefaultImports": true,
     "strictNullChecks": false,
     "incremental": true,
-    "strictBindCallApply": false,
+    "strictBindCallApply": false
   },
-  "include": [
-    "src/**/*"
-  ]
+  "include": ["src/**/*"]
 }
