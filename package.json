@@ -4,12 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npx tsc",
-    "start": "node dist/index.js",
-    "start:dev": "nodemon src/index.ts",
+    "build": "tsc --build",
+    "dev": "nodemon src/index.ts",
+    "start": "npm run build && node dist/index.js",
+    "lint": "eslint --ext .ts src/",
+    "lint:fix": "eslint --ext .ts src/ --fix",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "prettier": "prettier --check \"src/**/*.ts\"",
     "test": "jest",
     "test:watch": "jest --watch",
-    "test:cov": "jest --coverage"
+    "test:cov": "jest --coverage",
+    "validate": "concurrently --kill-others-on-fail -g -p \"[{name}]\" -n \"prettier,lint,build\" \"npm:prettier -s\" \"npm:lint -s\" \"npm:build -s\""
   },
   "repository": {
     "type": "git",
@@ -40,9 +45,13 @@
     "@types/mongoose": "^5.11.97",
     "@types/morgan": "^1.9.3",
     "@types/node": "^18.11.11",
+    "@typescript-eslint/eslint-plugin": "^5.45.1",
+    "@typescript-eslint/parser": "^5.45.1",
     "concurrently": "^7.6.0",
     "eslint": "^8.29.0",
+    "eslint-config-prettier": "^8.5.0",
     "nodemon": "^2.0.20",
+    "prettier": "^2.8.0",
     "ts-node": "^10.9.1",
     "typescript": "^4.9.3"
   }
