@@ -4,6 +4,8 @@ import helmet from 'helmet';
 import morgan from 'morgan';
 import routes from './routes';
 
+dbSetup(); // setup database
+dotenv.config(); // setup dotenv
 const app: Express = express();
 
 app.use(helmet());
